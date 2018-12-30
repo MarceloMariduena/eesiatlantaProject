@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://marcelomariduena.github.io/EESIAtlantaProject",
+  "homepage": "https://github.com/MarceloMariduena/EESIAtlantaProject",
   "dependencies": {
     "gh-pages": "^2.0.1"
   }
