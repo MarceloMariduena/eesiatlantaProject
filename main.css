@@ -190,8 +190,8 @@ section div img {
 .item3 { grid-area: service2; }
 .item4 { grid-area: service3; }
 
+/* Desktops Landscape */
 @media only screen and (min-width: 768px) {
-    /* Desktops */
     .grid-container {
         display: grid;
         grid-template-areas:
@@ -208,6 +208,23 @@ section div img {
     }
 }
 
+/* Desktop Portrait */
+@media only screen and (max-width: 768px) {
+    /* Desktops Portrait View */
+    .grid-container {
+        display: block;
+        padding: 10px;
+    }
+    .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 25px 0;
+        font-size: 30px;
+        margin: 10px;
+    }
+}
+
+/* Small Mobile Devides */
 @media screen and (max-width: 320px) and (orientation: portrait) {
     .grid-container {
         display: block;
@@ -222,8 +239,8 @@ section div img {
     }
 }
 
-@media only screen and (max-width: 768px) {
-    /* Desktops Portrait View */
+/* Other Mobile Devices */
+@media only screen and (max-width: 600px) and (orientation: portrait) {
     .grid-container {
         display: block;
         padding: 10px;
