@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<section class="topnav" id="myTopnav">
+			<a href="#home" class="active">Home</a>
+			<a href="#about"><i class="fa fa-user"></i> About</a>
+			<a href="#servicesDescription"><i class="fa fa-th"></i> Services</a>
+			<a href="#contact"><i class="fa fa-envelope"></i> Contact</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</section>
+
+		<!-- First Parallax -->
+		<section id="home" class="parallax">
+			<h2 class="blackBox fadeIn">EXECUTIVE ENFORCEMENT SERVICES, INC.</h2>
+		</section>
+
+		<!-- About -->
+		<section id="about">
+			<img src="images/eesiLogo.jpg">
+			<h1>ABOUT EESI</h1>
+			<hr/>
+			<div class="container">
+				<p id="description" class="fadeIn">Executive Enforcement Services, Inc. (EESI) was born out of a desire by the owner, C.L. Green, to provide protective services to individuals and businesses in his community. 
+						Mr. Green began his career as a bouncer. As he continued to work at 
+						sporting events and various other venues, he began to put together 
+						a crew of his own, which led to the launching of EESI. C.L.&#39;s 
+						vision and leadership abilities have allowed him to expand from 
+						primarily catering to the entertainment community, to providing 
+						community and subdivision patrols, concierge services, and providing 
+						security needs for corporate accounts.
+					</p>
+			</div>
+
+			</section>
+
+		<!-- Services Description -->
+		<section id="servicesDescription">
+			<img src="images/eesiLogo.jpg">
+			<h3>SERVICES</h3>
+			<hr/>
+			<p>Executive Protection</p>
+			<p>Concierge Services</p>
+			<p>Bodyguards</p>
+			<p>Undercober Officers</p>
+			<p>Private Investigators</p>
+			<p>Patrolling</p>
+			<p>Guards: Armed or Unarmed</p>
+		</section>
+
+		<!-- Services [GRID] -->
+		<section id = "services" class="grid-container">
+			<div class="item2 boxShadow fadeIn">
+				<img src="images/securityCamera4.jpeg" />
+				<p>Survaillance</p>
+			</div>
+		  	<div class="item3 boxShadow fadeIn">
+				<img src="images/securityBack2" />
+				<p>Security</p>
+			</div>  
+		  	<div class="item4 boxShadow fadeIn">
+				<img src="images/party2.jpeg" />
+				<p>Safety</p>
+			</div>
+		</section>
+
+		<!-- Relative footer -->
+		<section class="footer">
+			<div id="footer-text">
+				<p><em> "I found out about Execurive Enforcement Services, Inc 
+					through a quick Google search, and I couldn't have been more 
+					fortunate. They were fast, friendly and super professional 
+					from the moment we got started."</em>
+				</p>
+				<span> - Robbie White </span>
+			</div>
+		</section>
+
+		<!-- Contact -->
+		<section id="contact">
+			<div class="container">
+				<h1 class="textCenter"> CONTACT US </h1>
+
+				<form action="/action_page.php">
+					<label for="fname">First Name</label>
+					<input type="text" id="fname" name="firstname" placeholder="Your name..">
+					  
+					<label for="lname">Last Name</label>
+					<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+					  
+					<label for="lname">Phone Number</label>
+					<input type="text" id="phoneNumber" name="phonenumber" placeholder="Phone number..">
+					  
+					<label for="subject">Subject</label>
+					<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+					  
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+
+			<div class="textCenter">
+				<p>info@eesiatlanta.com<p>
+				<p>(470) 786-4840<p>
+				<p>604 Tree Corners Pkwy, Norcross GA 30092<p>
+			</div>
+			
+		</section>
+
+		<!-- Footer & Social Media Buttons -->
+		<section class="footer">
+			<div>
+				<a href="#home" class="buttonDecoration"><i class="fa fa-arrow-up"></i> To the top</a>
+			</div>
+		  
+			<div id="socialMediaButtons">
+				<i class="fa fa-facebook-official hover-opacity"></i>
+				<i class="fa fa-instagram hover-opacity"></i>
+				<i class="fa fa-snapchat hover-opacity"></i>
+				<i class="fa fa-pinterest-p hover-opacity"></i>
+				<i class="fa fa-twitter hover-opacity"></i>
+				<i class="fa fa-linkedin hover-opacity"></i>
+			</div>
+		</section>
+		
+	</body>
+
+	<!-- Responsive Navigation Menu -->
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} 
+			else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+</html>

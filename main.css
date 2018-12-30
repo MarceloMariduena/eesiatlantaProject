@@ -1,0 +1,274 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+hr {
+    width: 30%;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px 30px 20px 30px;
+  }
+
+/*** Effects ***/
+
+.boxShadow {
+    box-shadow: 5px 10px 18px #888;
+}
+
+.fadeIn {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera */
+    -moz-animation: fadein 2s; /* Firefox */
+     -ms-animation: fadein 2s; /* Internet Explorer */
+      -o-animation: fadein 2s; /* Opera */
+         animation: fadein 2s;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+/*** This ensures the size of images remain that of their parent element ***/
+
+img {
+    position: relative;
+    max-width: 100%;
+}
+
+section div img {
+    height: 200px;
+}
+
+/****** Navigation Bar ******/
+
+.topnav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+}
+  
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+  
+.topnav a:hover {
+    background-color: #888;
+}
+
+.active {
+    overflow: hidden;
+    background-color: #4CAF50;
+}
+  
+.topnav a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+  
+.topnav .icon {
+    display: none;
+}
+  
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
+/****** Parallax ******/
+
+.parallax {
+    background: url(images/securityBack.png);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-height: 60vw;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+.blackBox{
+    background-color: #000;
+    padding: 20px 30px 20px 30px;
+    margin-top: 21vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/****** About ******/
+
+#about {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+#description {
+    padding: 40px;
+}
+
+/****** Services Grid ******/
+
+#servicesDescription {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+/****** Body Grid ******/
+
+.item1 { grid-area: serviceHeader }
+.item2 { grid-area: service1; }
+.item3 { grid-area: service2; }
+.item4 { grid-area: service3; }
+
+@media only screen and (min-width: 768px) {
+    /* Desktops */
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'serviceHeader serviceHeader serviceHeader serviceHeader serviceHeader serviceHeader '
+            'service1 service1 service2 service2 service3 service3';
+        grid-gap: 10px;
+        padding: 10px;
+    }
+    .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    /* Desktops */
+    /* Fix this */
+    .grid-container {
+        display: block;
+        padding: 10px;
+    }
+    .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 25px 0;
+        font-size: 30px;
+        margin: 10px;
+    }
+}
+
+/****** Contact ******/
+
+#contact {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/****** Footers ******/
+
+.footer {
+    padding: 50px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.buttonDecoration {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+  
